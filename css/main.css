@@ -1,0 +1,2650 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+/*Start*/
+/*scroll bar*/ /*scroll bar*/
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 250px;
+}
+::-webkit-scrollbar-track {
+  background: #00000009;
+  border-radius: 250px;
+} /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00000337;
+  border-radius: 250px;
+} /* Handle on hover */
+
+/*fonts*/
+
+@font-face {
+  font-family: iran_yekan;
+  src: url(../Fonts/IranYekanX.pro/IRANYekanXVF.woff);
+  src: url(../Fonts/IranYekanX.pro/IRANYekanXVF.woff2);
+}
+
+:root {
+  --digicolor: #ef3b50;
+}
+/*contact*/
+button.contact {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  background-color: var(--digicolor);
+  border: none;
+  bottom: 10px;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 50%;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button.contact > img {
+  width: 24px;
+  height: 24px;
+}
+/*top*/
+div.Top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+/*top ad*/
+div.top-ad {
+  width: 100%;
+
+  height: 60px;
+}
+div.top-ad > img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+/*search bar*/
+div.search-bar-bg {
+  z-index: 4;
+  width: 100%;
+  height: 68px;
+  padding: 0 16px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+div.search-bar-top {
+  width: 1676px;
+  height: 68px;
+  padding: 12px 0;
+  display: flex;
+  margin: 0 auto;
+}
+div.login-sabad {
+  float: left;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.login-sabad > a {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+div.login-sabad > span {
+  margin: 0px 12px 0px 12px;
+  width: 1px;
+  height: 24px;
+  background-color: #e0e0e6;
+}
+div.login-sabad > button {
+  display: flex;
+  justify-content: center;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  color: #080a38;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px #e0e0e6 solid;
+  font-weight: 550;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  cursor: pointer;
+}
+div.login-sabad > button > img {
+  padding-left: 8px;
+}
+/*search side and digikala logo*/
+div.search-digilogo {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-grow: 1;
+  background-color: white;
+}
+div.search-digilogo > div.search-side {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-grow: 1;
+  height: 44px;
+}
+div.search-digilogo > div.search-side > div.search-bg {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 600px;
+  height: inherit;
+  padding: 0 16px;
+  background-color: #f1f2f4;
+  border-radius: 8px;
+}
+div.search-digilogo > div.search-side > div.search-bg > span {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 16px;
+}
+div.search-digilogo > div.search-side > div.search-bg > span > input {
+  text-align: right;
+  background-color: #f1f2f4;
+  border: none;
+  color: #767790;
+  width: 100%;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 12px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #767790;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: r#767790ed;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #767790;
+}
+div.search-digilogo > img.logo-of-digikala {
+  margin-left: 20px;
+}
+/*nav or menu*/
+nav {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: sticky;
+  top: 89.5px;
+  margin-top: 128px;
+  transition: 200ms linear all;
+  z-index: 990;
+}
+nav > div.menu {
+  width: 1676px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: #d0d0d064 2px groove;
+}
+nav > div.menu > div.list-of-menu {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+nav > div.menu > div.list-of-menu > div.location {
+  float: left;
+  padding-bottom: 4px;
+  display: flex;
+  cursor: pointer;
+}
+nav > div.menu > div.list-of-menu > div.location > div.matn {
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 12px;
+  color: #3f4064;
+  font-weight: 400;
+}
+nav > div.menu > div.list-of-menu > div.location > div.matn > span.over {
+  width: 170px;
+  height: 45px;
+  background-color: #3f4064;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  top: 0;
+  border: #080a38 solid 1px;
+  opacity: 0;
+
+  left: 0;
+}
+/*when location matn hovered : ...*/
+nav > div.menu > div.list-of-menu > div.location > div.matn:hover > span.over {
+  opacity: 1;
+  left: auto;
+  top: 39px;
+}
+nav > div.menu > div.list-of-menu > div.location > img {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+/*div category*/
+nav > div.menu > div.list-of-menu > div.category {
+  display: flex;
+  flex-grow: 1;
+  justify-content: right;
+  align-items: center;
+  direction: rtl;
+  height: inherit;
+}
+nav > div.menu > div.list-of-menu > div.category > div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  direction: ltr;
+  padding: 0 12px;
+  height: inherit;
+}
+nav > div.menu > div.list-of-menu > div.category > div > div.cover {
+  width: 0;
+  height: 1px;
+  background-color: #ef3b50;
+  position: absolute;
+  bottom: 2px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transition: all linear 150ms;
+}
+/*start hovering border-bottom for menu category*/
+nav
+  > div.menu
+  > div.list-of-menu
+  > div.category
+  > div.grouping:hover
+  > div.cover {
+  width: 136.44px;
+}
+nav
+  > div.menu
+  > div.list-of-menu
+  > div.category
+  > div.shegeftangiz:hover
+  > div.cover {
+  width: 113.24px;
+}
+nav
+  > div.menu
+  > div.list-of-menu
+  > div.category
+  > div.supermarket:hover
+  > div.cover {
+  width: 98.9px;
+}
+nav
+  > div.menu
+  > div.list-of-menu
+  > div.category
+  > div.gift-cart:hover
+  > div.cover {
+  width: 99.08px;
+}
+nav
+  > div.menu
+  > div.list-of-menu
+  > div.category
+  > div.most-sell:hover
+  > div.cover {
+  width: 119.84px;
+}
+nav > div.menu > div.list-of-menu > div.category > div.off:hover > div.cover {
+  width: 156.14px;
+}
+nav > div.menu > div.list-of-menu > div.category > div.ques:hover > div.cover {
+  width: 86px;
+}
+nav
+  > div.menu
+  > div.list-of-menu
+  > div.category
+  > div.sell-in-digi:hover
+  > div.cover {
+  width: 127.03px;
+}
+/*end hovering border-bottom for menu category*/
+nav > div.menu > div.list-of-menu > div.category > div > a {
+  text-decoration: none;
+  color: #5a5c7a;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 12px;
+  font-weight: 400;
+  height: 26.04px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > div.menu > div.list-of-menu > div.category > div > img {
+  margin-left: 4px;
+  width: 18px;
+}
+nav > div.menu > div.list-of-menu > div.category > div.grouping {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: inherit;
+  padding: 0px 0px 0px 0px;
+}
+nav > div.menu > div.list-of-menu > div.category > div.grouping > span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  height: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  color: #3f4064;
+  font-weight: 600;
+}
+nav > div.menu > div.list-of-menu > div.category > div.grouping img {
+  width: 20px;
+}
+nav > div.menu > div.list-of-menu > div.category > span {
+  width: 1px;
+  height: 16px;
+  background-color: #e0e0e6;
+}
+/*start div container and elements of body in*/
+div.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*start story line*/
+div.container > div.ins-bg-storys {
+  width: 100%;
+  height: 149.95px;
+}
+div.container > div.ins-bg-storys > div.bg-storys {
+  width: 100%;
+  height: 143.55px;
+  display: flex;
+}
+div.container > div.ins-bg-storys > div.bg-storys > div.storys {
+  width: 1240px;
+  height: 138.75px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  direction: rtl;
+}
+div.container > div.ins-bg-storys > div.bg-storys > div.storys > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  text-decoration: none;
+}
+
+div.container > div.ins-bg-storys > div.bg-storys > div.storys > a > div {
+  display: flex;
+  width: 79px;
+  height: 79px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #ed1b34;
+  align-items: center;
+  justify-content: center;
+  transition: all linear 70ms;
+}
+/*start visited and actived property*/
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a:active
+  > div {
+  scale: 0.9;
+}
+/*
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s1:visited
+  > div.bg1 {
+  background-color: #e6e6e6 ;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s2:visited
+  > div.bg2 {
+  background-color: #e6e6e6;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s3:visited
+  > div.bg3 {
+  background-color: #e6e6e6;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s4:visited
+  > div.bg4 {
+  background-color: #e6e6e6;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s5:visited
+  > div.bg5 {
+  background-color: #e6e6e6;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s6:visited
+  > div.bg6 {
+  background-color: #e6e6e6;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s7:visited
+  > div.bg7 {
+  background-color: #e6e6e6;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a.s8:visited
+  > div.bg8 {
+  background-color: #e6e6e6;
+}*/
+
+/*end visited and actived property*/
+div.container > div.ins-bg-storys > div.bg-storys > div.storys > a > div > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74.8px;
+  height: 74.8px;
+  border-radius: 50%;
+  border: 3.2px solid white;
+  background-color: gray;
+}
+div.container > div.ins-bg-storys > div.bg-storys > div.storys > a > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+div.container
+  > div.ins-bg-storys
+  > div.bg-storys
+  > div.storys
+  > a
+  > span
+  > strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 600;
+}
+/*swiper*/
+.swiper1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+.slide11 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  width: 100%;
+}
+
+.slide11 img {
+  display: flex;
+  width: 1920px;
+  height: 400px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+div.swiper1 > div.btn44 {
+  width: 128px;
+  height: 40px;
+  position: absolute;
+  z-index: +5;
+  bottom: 40px;
+  right: 0px;
+}
+div.swiper1 > div.btn44 > div.swiper-button-next1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  height: 40px;
+  line-height: 40px;
+  opacity: 0;
+  transition: all linear 100ms;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+}
+div.swiper1 > div.btn44 > div.swiper-button-prev1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  opacity: 0;
+  transition: all linear 100ms;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+}
+div.swiper1 > div.btn44 > div.swiper-button-next1 > div.covernext {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: rgb(63, 64, 100);
+  position: absolute;
+  text-align: center;
+  line-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+div.swiper1 > div.btn44 > div.swiper-button-prev1 > div.coverprev {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: rgb(63, 64, 100);
+  text-align: center;
+  font-weight: bold;
+  line-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.swiper1 > div.btn44 > div.swiper-button-next1 {
+  position: absolute;
+  left: 0;
+}
+div.swiper1 > div.btn44 > div.swiper-button-prev1 {
+  position: absolute;
+  right: 40px;
+}
+div.swiper1:hover > div.btn44 > div {
+  opacity: 1;
+}
+/*end swiper 1*/
+/*start top container*/
+div.topcontainer {
+  width: 1336px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/*start shegeft top*/
+div.topcontainer > div.topshegeft {
+  display: flex;
+  width: 100%;
+  margin-top: 24px;
+  height: 95.86px;
+  justify-content: space-around;
+  align-items: center;
+  direction: rtl;
+  padding: 8px 12px;
+}
+div.topcontainer > div.topshegeft > a {
+  display: flex;
+  flex-direction: column;
+  height: 79.86px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+div.topcontainer > div.topshegeft > a > img {
+  display: flex;
+  width: 52px;
+  height: 52px;
+}
+div.topcontainer > div.topshegeft > div.more {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+div.topcontainer > div.topshegeft > div.more > div.second {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f2f4;
+}
+
+div.topcontainer > div.topshegeft > div.more > div.second > img {
+  display: flex;
+  width: 32px;
+  height: 32px;
+}
+div.topcontainer > div.topshegeft span {
+  margin-top: 4px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 11px;
+  font-weight: 600;
+  color: #3f4064;
+}
+/*end top container*/
+
+div.swip {
+  width: 100%;
+}
+div.swiper2 {
+  height: 300px;
+  background-color: #ef3a4f;
+  padding: 20px 2px;
+  overflow: hidden;
+  border: solid 3px #ef3a4f;
+  direction: rtl;
+  margin-top: 24px;
+  border-radius: 17px;
+}
+div.wrapper2 {
+  direction: rtl;
+}
+
+div.wrapper2 > div.slider2 {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  align-items: center;
+}
+
+div.slider2 > img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+div.slider2 {
+  height: 260px !important;
+}
+/*slide 1*/
+div.wrapper2 > div.slide1 {
+  background-color: #ef3a4f;
+  width: 173px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.wrapper2 > div.slide1 > div.bg {
+  width: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 0 8px;
+}
+div.wrapper2 > div.slide1 > div.bg > a {
+  width: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 234.1;
+  text-decoration: none;
+}
+div.wrapper2 > div.slide1 > div.bg > a > img.first {
+  width: 92px;
+  height: 77px;
+}
+div.wrapper2 > div.slide1 > div.bg > a > img.second {
+  width: 115px;
+  height: 117px;
+  margin: 10px 0px;
+}
+div.wrapper2 > div.slide1 > div.bg > a > div.matn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.wrapper2 > div.slide1 > div.bg > a > div.matn > span {
+  color: white;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+  font-size: 14px;
+}
+div.wrapper2 > div.slide1 > div.bg > a > div.matn > img.third {
+  width: 18px;
+  height: 18px;
+}
+/*slide 2*/
+
+div.wrapper2 > div.slide2 {
+  border-top-right-radius: 10px;
+  width: 182px !important;
+  border-bottom-right-radius: 10px;
+}
+div.wrapper2 > div.slider2 > a.bit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 12px 16px;
+  flex-direction: column;
+  text-decoration: none;
+}
+div.wrapper2 > div.slider2 > a.bit > img {
+  width: 150px;
+  height: 150px;
+}
+div.wrapper2 > div.slider2 > a.bit > div.fl {
+  width: 100%;
+  height: 14.4px;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  flex-direction: column;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.cash {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.cash > div.gheymat {
+  height: 34.4px;
+  display: flex !important;
+  width: 50px;
+  align-items: center !important;
+  flex-grow: 1 !important;
+  background-color: #ffffff;
+  justify-content: end !important;
+}
+
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.cash > div.gheymat > span {
+  color: #3f4064;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.cash > div.gheymat > img {
+  width: 16px;
+  height: 16px;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.cash > div.darsad {
+  height: 20px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  background-color: #ef3a4f;
+  border-radius: 50px;
+  justify-content: center;
+  padding: 0 5px;
+}
+div.wrapper2
+  > div.slider2
+  > a.bit
+  > div.nums
+  > div.cash
+  > div.darsad
+  > span.takhfif {
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 2;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.was {
+  width: 100%;
+  height: 26.03px;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  padding-left: 20px;
+}
+div.wrapper2 > div.slider2 > a.bit > div.nums > div.was > div.wasin {
+  height: inherit;
+  color: #c3c3ce;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 12px;
+  text-decoration: line-through solid #c3c3ce 1px;
+  display: flex;
+  font-weight: 450;
+  align-items: center;
+}
+div.wrapper2 > div.slider2 > a.bit > div.row {
+  width: 100%;
+  height: 4px;
+}
+
+/*slide 3*/
+
+div.wrapper2 > div.slide3 {
+  width: 182px !important;
+}
+/*slide 4*/
+div.wrapper2 > div.slide4 {
+  width: 182px !important;
+}
+/*slide 5*/
+div.wrapper2 > div.slide5 {
+  width: 182px !important;
+}
+/*slide 6*/
+div.wrapper2 > div.slide6 {
+  width: 182px !important;
+}
+/*slide 7*/
+div.wrapper2 > div.slide7 {
+  width: 182px !important;
+}
+/*slide 8*/
+div.wrapper2 > div.slide8 {
+  width: 182px !important;
+}
+/*slide 9*/
+div.wrapper2 > div.slide9 {
+  width: 182px !important;
+}
+/*slide 10*/
+div.wrapper2 > div.slide10 {
+  width: 182px !important;
+}
+/*slide 11*/
+div.wrapper2 > div.slide11 {
+  width: 182px !important;
+}
+/*slide 12*/
+div.wrapper2 > div.slide12 {
+  width: 182px !important;
+}
+/*slide 13*/
+div.wrapper2 > div.slide13 {
+  width: 182px !important;
+}
+/*slide 14*/
+div.wrapper2 > div.slide14 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 192px !important;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.wrapper2 > div.slide14 > a.last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+div.wrapper2 > div.slide14 > a.last > div.hame {
+  width: 45.6px;
+  height: 45.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #19bfd3;
+  border-radius: 50%;
+}
+div.wrapper2 > div.slide14 > a.last > div.hame > img {
+  width: 20px;
+  height: 20px;
+}
+div.wrapper2 > div.slide14 > a.last > p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  color: #3f4064;
+  height: 30.1px;
+  display: flex;
+  align-items: center;
+}
+/*button left and right in slider 2*/
+
+div.swip > div.swiper2 > div.next {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  text-align: center;
+}
+div.swip > div.swiper2 > div.next > div.covernext2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.swip > div.swiper2 > div.next > div.covernext2 > img {
+  opacity: 0.7;
+}
+div.swip > div.swiper2 > div.next > div.covernext2:hover > img {
+  opacity: 1;
+}
+/**/
+div.swip > div.swiper2 > div.prev {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  text-align: center;
+}
+div.swip > div.swiper2 > div.prev > div.coverprev2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.swip > div.swiper2 > div.prev > div.coverprev2 > img {
+  opacity: 0.7;
+}
+div.swip > div.swiper2 > div.prev > div.coverprev2:hover > img {
+  opacity: 1;
+}
+/*end shegeftangiz*/
+/*start super-markety*/
+div.shsupermarket {
+  width: 100%;
+  height: 110px;
+  border-radius: 16px;
+  background-color: #eef1f0;
+  margin-top: 8px;
+  background-image: url(../Media/supermarket/super-market-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+div.shsupermarket > a.background {
+  width: 100%;
+  height: 100%;
+  padding: 16px 40px 12px 40px;
+  background-color: #19c0d300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+div.shsupermarket > a.background > div.shegeftangizsuper {
+  height: 100%;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.shsupermarket > a.background > div.shegeftangizsuper > img.box {
+  height: 62px;
+  width: 66px;
+}
+div.shsupermarket > a.background > div.shegeftangizsuper > img.shsu {
+  height: 28px;
+  width: 250px;
+  margin: 0 20px;
+}
+div.shsupermarket > a.background > div.shegeftangizsuper > div.mostoff {
+  height: 28px;
+  width: 109.58px;
+  padding: 0 12px;
+  background-color: #39ae00;
+  color: white;
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  border-radius: 100px;
+  font-weight: 600;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 14px;
+}
+div.shsupermarket > a.background > div.mahsoolat {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+div.shsupermarket > a.background > div.mahsoolat > div.things {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+}
+div.shsupermarket > a.background > div.mahsoolat > div.things > div {
+  width: 74px;
+  height: 74px;
+  margin-left: 8px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+div.shsupermarket > a.background > div.mahsoolat > div.things > div > img {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+div.shsupermarket > a.background > div.mahsoolat > div.things > div > span {
+  background-color: #ef394e;
+  transform: translate(19.5px, 27px);
+  position: absolute;
+  width: 34px;
+  height: 20px;
+  border-radius: 50px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+}
+div.shsupermarket > a.background > div.mahsoolat > div.more {
+  height: 50.04px;
+  display: flex;
+  width: 144.14px;
+  direction: ltr;
+  padding: 12px 20px;
+  background-color: white;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #39ae00;
+  font-size: 12px;
+  font-family: iran_yekan;
+  font-weight: 600;
+  font-variation-settings: "dots" 3;
+}
+div.shsupermarket > a.background > div.mahsoolat > div.more > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+div.pagination1 > span {
+  background-color: white;
+}
+/*end super-markety*/
+/*start bottom container*/
+div.bottomcontainer {
+  width: 1336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/*start Advertisement of four*/
+div.advertisement_of_four {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+div.advertisement_of_four > a > img {
+  width: 314px;
+  border-radius: 16px;
+}
+/*end Advertisement of four*/
+/*start digikala gruping*/
+div.digigruping {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+  padding: 16px 16px 40px 16px;
+}
+div.digigruping > h3 {
+  height: 44.1px;
+  margin-bottom: 36px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
+}
+div.digigruping > div.items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 440.08px;
+}
+div.digigruping > div.items > div {
+  display: flex;
+  align-items: center;
+  height: 440.08px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+div.digigruping > div.items > div > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+div.digigruping > div.items > div > a > img {
+  width: 170px;
+  height: 170px;
+}
+div.digigruping > div.items > div > a > p {
+  font-size: 12px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  color: #080a38;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: center;
+  height: 26.04px;
+}
+/*end digikala gruping*/
+/*start Double ad1*/
+div.doublead1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+div.doublead1 > a > img {
+  width: 644px;
+  height: 257.6px;
+  border-radius: 16px;
+}
+/*end Double ad1*/
+/*start digiproposal*/
+div.digiproposal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+div.digiproposal > div.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76.1px;
+  padding: 16px 0;
+}
+div.digiproposal > div.title > h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-family: iran_yekan;
+  font-weight: 500;
+  font-variation-settings: "dots" 3;
+}
+div.digiproposal > div.items {
+  width: 100%;
+  height: 309px;
+  border-radius: 16px;
+  border: 1px solid #e0e0e6;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+div.digiproposal > div.items > div.item {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  border-right: 1px solid #f1f2f4;
+}
+div.digiproposal > div.items > div.items7 {
+  border: none;
+}
+div.digiproposal > div.items > div.item > a {
+  height: 50%;
+  width: 100%;
+  padding: 16px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-decoration: none;
+}
+div.digiproposal > div.items > div.item > a.top {
+  border-bottom: 1px solid #f1f2f4;
+}
+div.digiproposal > div.items > div.item > a > div.image {
+  height: 84px;
+  width: 84px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f1f2f4;
+}
+div.digiproposal > div.items > div.item > a > div.image > img {
+  height: 60px;
+  width: 60px;
+  background-color: #f1f2f4;
+}
+div.digiproposal > div.items > div.item > a > h4 {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  font-weight: 400;
+  color: #080a38;
+}
+/*end digiproposal*/
+/*start The most popular brands*/
+div.most_popular_brands {
+  width: 100%;
+  height: 223.7px;
+  border-radius: 16px;
+  border: 1px solid #e0e0e6;
+  margin-top: 24px;
+  padding: 24px 0;
+}
+div.most_popular_brands > div.title {
+  width: 100%;
+  height: 44.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.most_popular_brands > div.title > p {
+  font-size: 21px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+}
+div.most_popular_brands > div.title > img {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+/*start swiper of most popular brands*/
+div.popularswip {
+  width: 100%;
+  margin-top: 12px;
+}
+div.popularswip > div.swiper3 {
+  direction: rtl;
+}
+
+div.popularswip > div.swiper3 > div.wrapper3 > div.slider3 {
+  width: 142px !important;
+  height: 118px !important;
+  border-right: 1px solid #f1f2f4;
+}
+div.popularswip > div.swiper3 > div.wrapper3 > div.slider3_slide1 {
+  border: none;
+}
+div.popularswip > div.swiper3 > div.wrapper3 > div.slider3 > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.popularswip > div.swiper3 > div.wrapper3 > div.slider3 > a > img {
+  width: 110px !important;
+}
+/*button left and right in slider 3*/
+
+div.popularswip > div.swiper3 > div.next {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  text-align: center;
+}
+div.popularswip > div.swiper3 > div.next > div.covernext3 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.popularswip > div.swiper3 > div.next > div.covernext3 > img {
+  opacity: 0.7;
+}
+div.popularswip > div.swiper3 > div.next > div.covernext3:hover > img {
+  opacity: 1;
+}
+/**/
+div.popularswip > div.swiper3 > div.prev {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  text-align: center;
+}
+div.popularswip > div.swiper3 > div.prev > div.coverprev3 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.popularswip > div.swiper3 > div.prev > div.coverprev3 > img {
+  opacity: 0.7;
+}
+div.popularswip > div.swiper3 > div.prev > div.coverprev3:hover > img {
+  opacity: 1;
+}
+/*end The most popular brands*/
+/*start Double ad1*/
+div.doublead2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+div.doublead2 > a > img {
+  width: 644px;
+  height: 257.6px;
+  border-radius: 16px;
+}
+/*end Double ad1*/
+/*start bar asas bazdidhaye  shoma1*/
+div.bar_asas_bazdidhaye_shoma1 {
+  width: 100%;
+  border: 1px solid #e0e0e6;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 24px;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  padding: 8px 20px;
+  border-right: 1px solid #f1f2f4;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item4 {
+  border: none;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item2 {
+  border-right: 2px solid #f1f2f4;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.head {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 8px;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.head > div.title {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+  height: 34.4px;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.head > div.title > h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 34.4px;
+  font-size: 16px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+  color: #23254e;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.head > p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 23.86px;
+  font-size: 11px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  color: #767790;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.images {
+  height: 294.45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.images > div.left {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #f1f2f4;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item1 > div.images > div.left {
+  border-right: 2px solid #f1f2f4;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item4 > div.images > div.left {
+  border-right: 2px solid #f1f2f4;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.images > div.right {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.images > div > a {
+  width: 141.93px;
+  height: 146.73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.images > div > a.top {
+  border-bottom: 1px solid #f1f2f4;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item img {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.bottom {
+  width: 100%;
+  margin: 8px 0px 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.bottom > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  direction: rtl;
+  text-decoration: none;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.bottom > a > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+  color: #19bfd3;
+}
+div.bar_asas_bazdidhaye_shoma1 > div.item > div.bottom > a > img {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*end bar asas bazdidhaye  shoma1*/
+/*start digiplus*/
+div.digiplus {
+  width: 100%;
+  height: 388px;
+  background-color: #941b80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 16px;
+  margin-top: 24px;
+  border-radius: 16px;
+}
+div.digiplus > div.items {
+  width: 868px;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-direction: column;
+  padding: 0 16px;
+}
+div.digiplus > div.items > div.title {
+  width: 100%;
+  height: 66.4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+div.digiplus > div.items > div.title > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  direction: rtl;
+  text-decoration: none;
+}
+div.digiplus > div.items > div.title > a > img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.digiplus > div.items > div.title > a > span {
+  color: #b12ba4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+  font-size: 12px;
+}
+div.digiplus > div.items > div.title > div.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 16px;
+}
+div.digiplus > div.items > div.title > div.time > h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  color: #080a38;
+  font-size: 16px;
+  font-family: iran_yekan;
+  font-weight: 600;
+  font-variation-settings: "dots" 3;
+}
+div.digiplus > div.items > div.title > div.time > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+div.digiplus > div.items > div.things {
+  width: 100%;
+  height: 289.6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+div.digiplus > div.items > div.things > div.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 116px;
+}
+/*  */
+div.digiplus > div.logo {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-grow: 1;
+  margin-left: 12px;
+  padding-top: 24px;
+  background-image: url(../Media/digiplus/bg.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-right: 24px;
+}
+div.digiplus > div.logo > div.title {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+div.digiplus > div.logo > div.title > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 32px;
+}
+div.digiplus > div.logo > div.title > div.khadamat_digiplus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-top: 4px;
+  font-variation-settings: "dots" 3;
+  font-size: 14px;
+  font-family: iran_yekan;
+  font-variation-settings: "dots" 3;
+  height: 30.1px;
+}
+div.digiplus > div.logo > div.title > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #941b80;
+  border: 1px solid white;
+  border-radius: 8px;
+  direction: rtl;
+  text-decoration: none;
+  padding: 4px 16px;
+  margin-top: 12px;
+}
+div.digiplus > div.logo > div.title > a > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-family: iran_yekan;
+  font-weight: 500;
+  font-variation-settings: "dots" 3;
+}
+div.digiplus > div.logo > div.title > a > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+div.digiplus img {
+  width: 116px;
+}
+
+/*end digiplus*/
+/*start digiclub*/
+div.digiclub {
+  width: 100%;
+  height: 87.2px;
+  background-image: linear-gradient(to right, #35a6c8, #007295);
+  border-radius: 16px;
+  margin-top: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.digiclub > div.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+div.digiclub > div.logo > a.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  justify-content: center;
+}
+div.digiclub > div.logo > a.logo > img {
+  width: 119px;
+  height: 33px;
+}
+div.digiclub > div.elements {
+  width: 811.99px;
+  height: 63.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 8px;
+}
+div.elements > a.item {
+  background-color: white;
+  padding: 1px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  flex-direction: row;
+}
+
+div.digiclub > div.elements > a.left {
+  width: 256.5px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px 0 0 7px;
+}
+div.digiclub > div.elements > a.center {
+  width: 274.3px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.digiclub > div.elements > a.right {
+  width: 273.19px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  border-radius: 0 7px 7px 0;
+  justify-content: center;
+}
+div.elements > a.item > div.image {
+  padding: 1px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+div.elements > a.item > div.image > img {
+  width: 168px;
+  float: left;
+}
+div.elements > a.item > div.matn {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+div.elements > a.item > div.matn > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+div.elements > a.item > div.matn > span {
+  font-family: iran_yekan;
+  font-size: 12px;
+  margin-right: 8px;
+  font-variation-settings: "dots" 3;
+  color: #080a38;
+  font-weight: 550 !important;
+}
+div.elements > a.left > div.matn > span {
+  font-family: iran_yekan;
+  font-size: 12px;
+  margin-right: 7px !important;
+  font-variation-settings: "dots" 3;
+  color: #080a38;
+  font-weight: 600;
+}
+/*end digiclub*/
+/*start porforooshtarin_kalaha*/
+div.most_seller {
+  width: 100%;
+  height: 403.7px;
+  margin-top: 24px;
+  padding: 16px 0;
+  border-radius: 16px;
+  border: 1px solid #e0e0e6;
+  display: flex;
+  flex-direction: column;
+}
+div.most_seller > div.more {
+  position: absolute;
+  padding-left: 16px;
+}
+div.most_seller > div.more > a {
+  text-decoration: none;
+  font-family: iran_yekan;
+  font-size: 14px;
+  color: #19bfd3;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+  height: 30.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.most_seller > div.title {
+  width: 100%;
+  height: 44.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+div.most_seller > div.title > div.ti_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.most_seller > div.title > div.ti_center > p {
+  font-family: iran_yekan;
+  font-size: 21px;
+  color: #080a38;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+}
+div.most_seller > div.title > div.ti_center > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+/*start swiper 4 for most seller*/
+.seller_swiper {
+  width: 100%;
+  height: 298px;
+  margin-top: 28px;
+  padding: 0 16px;
+}
+.swip_sell {
+  width: 100%;
+  height: 100%;
+  direction: rtl;
+}
+.slider4 {
+  width: 306.5px !important;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.slider4 > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 86px;
+  text-decoration: none !important;
+  direction: ltr;
+}
+.slider4 > a > img {
+  width: 86px;
+  height: 86px;
+  margin-left: 12px;
+}
+.slider4 > a > span {
+  color: #19bfd3;
+  font-family: iran_yekan;
+  font-size: 26px;
+  font-variation-settings: "dots" 3;
+  margin-left: 12px;
+  font-weight: 850;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider4 > a > div.matn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider4 > a > div.matn > p {
+  width: 100%;
+  direction: rtl;
+  color: #3f4064;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  line-height: 26.04px;
+}
+.slider4 > span {
+  width: 189.59px;
+  height: 1px;
+  background-color: #f1f2f4;
+}
+/*button left and right in slider 3*/
+
+div.swip_sell > div.next {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  text-align: center;
+}
+div.swip_sell > div.next > div.covernext4 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.swip_sell > div.next > div.covernext4 > img {
+  opacity: 0.7;
+}
+div.swip_sell > div.next > div.covernext4:hover > img {
+  opacity: 1;
+}
+/**/
+div.swip_sell > div.prev {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+  text-align: center;
+}
+div.swip_sell > div.prev > div.coverprev4 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.swip_sell > div.prev > div.coverprev4 > img {
+  opacity: 0.7;
+}
+div.swip_sell > div.prev > div.coverprev4:hover > img {
+  opacity: 1;
+}
+/*end swiper 4 for most seller*/
+/*end porforooshtarin_kalaha*/
+/*start long_AD*/
+a.long_AD {
+  width: 100%;
+  height: 163px;
+  border-radius: 16px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.long_AD > img {
+  width: 100%;
+  height: 163px;
+  border-radius: 16px;
+}
+/*end long_AD*/
+/*start khandaniha*/
+div.khandaniha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 365.35px;
+  padding-bottom: 20px;
+  margin-top: 24px;
+}
+.khandaniha > .title {
+  width: 100%;
+  height: 66.4px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.khandaniha > .title > a.more {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.khandaniha > .title > a.more > span {
+  color: #19bfd3;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+}
+.khandaniha > .title > a.more > img {
+  width: 18px;
+  height: 18px;
+}
+.khandaniha > .title > div.text {
+  color: #080a38;
+  font-family: iran_yekan;
+  font-size: 16px;
+  font-weight: 600;
+  font-variation-settings: "dots" 3;
+}
+.khandaniha > .items {
+  width: 100%;
+  height: 278.95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.khandaniha > .items > .item {
+  width: 317px;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #e0e0e6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.khandaniha > .items > .item > div.image {
+  height: 201.28px;
+  width: 100%;
+}
+.khandaniha > .items > .item > div.image > img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.khandaniha > .items > .item > p {
+  width: 100%;
+  color: #080a38;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  margin: 8px 0 12px 0;
+  padding: 0 16px;
+  direction: rtl;
+  line-height: 26.04px;
+}
+/*end khandaniha*/
+/*end bottom container*/
+/*end div container and elements of body in*/
+/*start footer*/
+footer {
+  width: 100%;
+  margin-top: 48px;
+  padding-top: 32px;
+  display: flex;
+  align-items: start;
+  border-top: 1px solid #f1f2f4;
+}
+footer > div.foot_container {
+  width: 1676px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+/*start title*/
+.foot_container > .title {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot_container > .title > img {
+  width: 113.33px;
+  height: 30px;
+}
+.foot_container > .title > a {
+  text-decoration: none;
+  width: 137.81px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  padding: 8px 16px;
+  border: 1px solid #e0e0e6;
+  border-radius: 8px;
+}
+.foot_container > .title > a > span {
+  color: #9e9fb1;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.foot_container > .title > a > img {
+  width: 24px;
+  height: 24px;
+}
+/*end title*/
+/*start info*/
+div.info {
+  display: flex;
+  align-items: center;
+  height: 26.038px;
+  justify-content: end;
+  margin-top: 12px;
+  width: 100%;
+}
+div.info > p.long {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: start;
+  direction: rtl;
+  color: #3f4064;
+  font-family: iran_yekan;
+  height: 100%;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+}
+div.info > div.fasele {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  direction: rtl;
+  color: #9e9fb1;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+  height: 100%;
+}
+div.info > p.short {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  direction: rtl;
+  color: #3f4064;
+  height: 100%;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+}
+/*end info*/
+/*start emkanat*/
+div.emkanat {
+  width: 100%;
+  height: 103.863px;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+}
+div.emkanat > a {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  padding: 12px 0;
+  text-decoration: none;
+  height: 100%;
+}
+div.emkanat > a > img {
+  width: 56px;
+  height: 56px;
+}
+div.emkanat > a > p {
+  font-family: iran_yekan;
+  color: #3f4064;
+  font-size: 11px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+  direction: rtl;
+  line-height: 23.86px;
+}
+/*end emkanat*/
+/*start guide*/
+div.guid {
+  width: 100%;
+  height: 271px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+div.guid > .items {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  height: 100%;
+}
+div.guid > .items > .item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100%;
+  align-items: end;
+}
+div.guid > .items > .item > p {
+  font-family: iran_yekan;
+  color: #3f4064;
+  font-size: 16px;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+  direction: rtl;
+  margin-bottom: 8px;
+  line-height: 34.4px;
+  width: 100%;
+}
+div.guid > .items > .item > a {
+  font-family: iran_yekan;
+  color: #767790;
+  font-size: 14px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+  direction: rtl;
+  margin-bottom: 8px;
+  text-decoration: none;
+  line-height: 31.1px;
+  width: 100%;
+}
+div.guid > .contact {
+  width: 322.94px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.guid > .contact > h4.title {
+  font-family: iran_yekan;
+  color: #3f4064;
+  font-size: 16px;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+  direction: rtl;
+  margin-bottom: 12px;
+  line-height: 34.4px;
+  width: 100%;
+}
+div.guid > .contact > .socials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 40px;
+}
+div.guid > .contact > .socials > a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 32px;
+}
+div.guid > .contact > .socials > a > img {
+  width: 40px;
+  height: 40px;
+}
+div.guid > .contact > h4.email {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-family: iran_yekan;
+  color: #3f4064;
+  font-size: 16px;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+  direction: rtl;
+  margin-bottom: 12px;
+  line-height: 34.4px;
+  text-align: justify;
+}
+div.guid > .contact > div.input_email {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.guid > .contact > div.input_email > div.input {
+  width: 261.18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  background-color: #f1f2f4;
+  border-radius: 8px;
+}
+div.guid > .contact > div.input_email > div.input > input {
+  height: 32.25px;
+  width: 100%;
+  padding: 0 8px;
+  color: #e0e0e6;
+  font-family: iran_yekan;
+  background-color: #f1f2f4;
+  border: none;
+  font-size: 16px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+  direction: rtl;
+}
+div.guid > .contact > div.input_email > button {
+  width: 53.76px;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #e0e0e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 12px 16px;
+  margin-right: 8px;
+}
+div.guid > .contact > div.input_email > button > span {
+  color: white;
+  font-family: iran_yekan;
+  font-size: 16px;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+  direction: rtl;
+}
+
+/*end guide*/
+/*start download*/
+div.download {
+  width: 100%;
+  height: 76px;
+  margin-bottom: 28px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3c4b6d;
+  direction: rtl;
+  border-radius: 8px;
+}
+div.download > .title {
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+div.download > .title > img {
+  height: 44px;
+  width: 44px;
+  margin-left: 16px;
+}
+div.download > .title > p {
+  color: white;
+  font-family: iran_yekan;
+  font-size: 21px;
+  font-variation-settings: "dots" 3;
+  font-weight: 400;
+  direction: rtl;
+}
+div.download > div.links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+}
+div.download > div.links > a.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 42.4px;
+  height: 44px;
+  margin-right: 16px;
+}
+div.download > div.links > a.more > img {
+  width: 42.4px;
+  height: 44px;
+}
+.download > .links > .app {
+  margin: 8px;
+}
+div.download > div.links > a.app > img {
+  width: 144px;
+  height: 44px;
+}
+/*end download*/
+/*start certi*/
+div.certi {
+  width: 100%;
+  height: 223.84px;
+  display: flex;
+  padding: 32px 0;
+  border-top: 1px solid #f1f2f4;
+}
+div.certi > .certis {
+  width: 446.6px;
+  height: 108.6px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+div.certi > .certis > a {
+  height: 100%;
+  width: 108.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  margin-right: 8px;
+  border: 1px solid #e0e0e6;
+  border-radius: 8px;
+}
+div.certi > .certis > a > img {
+  height: 75px;
+}
+div.certi > .matn {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  direction: rtl;
+}
+div.certi > .matn > strong {
+  color: #5a5c7a;
+  font-family: iran_yekan;
+  font-size: 21px;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+  line-height: 44.1px;
+}
+div.certi > .matn > p {
+  color: #767790;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  line-height: 26.04px;
+  font-weight: 400;
+  width: 100%;
+  padding-left: 50px;
+}
+div.certi > .matn > h4 {
+  line-height: 34.4px;
+  width: 100%;
+  color: #eee6eb;
+  font-family: iran_yekan;
+  font-size: 16px;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+}
+div.certi > .matn > a {
+  width: 100px;
+  height: 26.04px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  color: #19bfd3;
+  font-family: iran_yekan;
+  font-size: 12px;
+  font-variation-settings: "dots" 3;
+  font-weight: 600;
+}
+div.certi > .matn > a > img {
+  width: 18px;
+  height: 18px;
+}
+
+/*end certi*/
+/*start copyright*/
+div.copy {
+  width: 100%;
+  height: 88.66px;
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #767790;
+  font-family: iran_yekan;
+  direction: rtl;
+  font-size: 11px;
+  font-variation-settings: "dots" 3;
+  font-weight: 500;
+  border-top: 1px solid #f1f2f4;
+}
+/*end copyright*/
+
+/*end footer*/
+/*start more_brands*/
+div.more_brands {
+  width: 100%;
+  height: 160px;
+  background-color: #f1f2f4;
+  display: flex;
+}
+div.more_brands > .bg {
+  width: 1636px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+div.more_brands > .bg > div {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid #e0e0e6;
+}
+div.more_brands > .bg > div.col9 {
+  border: none;
+}
+div.more_brands > .bg > div > a {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+div.more_brands > .bg > div > a > img {
+  height: 20px;
+  width: 100px;
+}
+div.more_brands > .bg > div > a.top {
+  border-bottom: solid 1px #e0e0e6;
+}
+
+/*end more_brands*/
+/*End*/
